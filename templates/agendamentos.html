@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Agendamentos</title>
+    <link rel="stylesheet" href="/gorraci/projeto/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Agendamentos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Endereço</th>
+                    <th>Código do Imóvel</th>
+                    <th>Responsável</th>
+                    <th>Data da Vistoria</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for agendamento in agendamentos %}
+                <tr>
+                    <td>{{ agendamento[1] }}</td>
+                    <td>{{ agendamento[2] }}</td>
+                    <td>{{ agendamento[3] }}</td>
+                    <td>{{ agendamento[5] }}</td>
+                    <td>{{ agendamento[6] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <script src="/gorraci/projeto/static/script.js"></script>
+</body>
+</html>

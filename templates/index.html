@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Vistoria</title>
+    <link rel="stylesheet" href="/gorraci/projeto/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento de Vistoria</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco" id="endereco" required>
+            </div>
+            <div class="form-group">
+                <label for="cod_imovel">Código do Imóvel:</label>
+                <input type="text" name="cod_imovel" id="cod_imovel" required>
+            </div>
+            <div class="form-group">
+                <label for="responsavel_condominio">Responsável pelo Condomínio:</label>
+                <input type="text" name="responsavel_condominio" id="responsavel_condominio" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone_email">Telefone / Email:</label>
+                <input type="text" name="telefone_email" id="telefone_email" required>
+            </div>
+            <div class="form-group">
+                <label for="data_agendamento_vistoria">Data da Vistoria:</label>
+                <input type="date" name="data_agendamento_vistoria" id="data_agendamento_vistoria" required>
+            </div>
+            <div class="form-group">
+                <label for="status_vistoria">Status da Vistoria:</label>
+                <select name="status_vistoria" id="status_vistoria" required>
+                    <option value="pendente">Pendente</option>
+                    <option value="aprovada">Aprovada</option>
+                    <option value="reprovada">Reprovada</option>
+                </select>
+            </div>
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+    <script src="/gorraci/projeto/static/script.js"></script>
+</body>
+</html>
